@@ -17,4 +17,7 @@ public class Chef
     [DataType(DataType.Date)]
     public DateTime DateOfBirth {get;set;}
 
+    // navigation
+    public List<Dish> MakeDishes {get; set;} = new List<Dish>();
+
 }

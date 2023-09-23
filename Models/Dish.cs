@@ -13,4 +13,9 @@ public class Dish
     public int tastiness {get;set;}
     [Required]
     public int Calories {get;set;}
+
+    // Navigation 
+    [Required]
+    public int ChefId{get;set;}
+    public Chef? Maker {get;set;}
 }
