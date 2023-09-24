@@ -23719,6 +23719,21 @@
       "FilePath": "c:\\Users\\belai\\OneDrive\\Bureau\\c#\\ORMs\\ChefsDishes\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\belai\\OneDrive\\Bureau\\c#\\ORMs\\ChefsDishes\\Views\\Home\\AddChef.cshtml",
+      "TargetPath": "Views\\Home\\AddChef.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\belai\\OneDrive\\Bureau\\c#\\ORMs\\ChefsDishes\\Views\\Home\\AddDish.cshtml",
+      "TargetPath": "Views\\Home\\AddDish.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\belai\\OneDrive\\Bureau\\c#\\ORMs\\ChefsDishes\\Views\\Home\\Dishes.cshtml",
+      "TargetPath": "Views\\Home\\Dishes.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }

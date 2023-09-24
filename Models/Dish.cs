@@ -10,7 +10,7 @@ public class Dish
     [MinLength(3)]
     public string Name {get;set;}
     [Required]
-    public int tastiness {get;set;}
+    public int Tastiness {get;set;}
     [Required]
     public int Calories {get;set;}
 

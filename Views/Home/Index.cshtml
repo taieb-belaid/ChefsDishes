@@ -3,6 +3,29 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <a href="/">Chefs</a> | <a href="/dishes">Dishes</a> | <a href="/chef/add">Add a Chef</a> | <a href="/dish/add">Add
+        a Dish</a>
+    <h1 class="display-6 mt-5">Check out our roster of chefs</h1>
+    <hr>
 </div>
+<div class="container mt-5 text-center">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col"># of Dishes</th>
+            </tr>
+        </thead>
+    @foreach (Chef chef in @ViewBag.All_Chefs)
+    {
+        <tbody>
+            <tr>
+                <td>@chef.FirstName @chef.LastName</td>
+                <td>@chef.DateOfBirth</td>
+                <td>mdo</td>
+            </tr>
+        </tbody>
+    }
+        </table>
+    </div>
