@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@model List<Chef>
 <div class="text-center">
     <a href="/">Chefs</a> | <a href="/dishes">Dishes</a> | <a href="/chef/add">Add a Chef</a> | <a href="/dish/add">Add
         a Dish</a>
@@ -17,13 +17,13 @@
                 <th scope="col"># of Dishes</th>
             </tr>
         </thead>
-    @foreach (Chef chef in @ViewBag.All_Chefs)
+    @foreach (Chef chef in Model)
     {
         <tbody>
             <tr>
                 <td>@chef.FirstName @chef.LastName</td>
-                <td>@chef.DateOfBirth</td>
-                <td>mdo</td>
+                <td> @chef.DateOfBirth</td>
+                <td>@chef.MakeDishes.Count()</td>
             </tr>
         </tbody>
     }

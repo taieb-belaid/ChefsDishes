@@ -3,6 +3,8 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ChefsDishes.Models;
 namespace ChefsDishes.Controllers;
+
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Update.Internal;
 
 public class HomeController : Controller
@@ -18,8 +20,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        ViewBag.All_Chefs = _context.Chefs.ToList();
-        return View();
+        List<Chef>All_Chefs = _context.Chefs.ToList();
+        return View(All_Chefs);
     }
     //___________Add_a_chef__View_____
     [HttpGet("chef/add")]
@@ -43,7 +45,7 @@ public class HomeController : Controller
     [HttpGet("dish/add")]
     public IActionResult AddDish()
     {
-        // ViewBag.All_Chefs = _context.Chefs.ToList();
+        ViewBag.All_Chefs = _context.Chefs.ToList();
         return View();
     }
     //_________Add_a_Dish_database_____
@@ -62,8 +64,11 @@ public class HomeController : Controller
     [HttpGet("/dishes")]
     public IActionResult Dishes()
     {
-        return View();
+        // ViewBag.DishWithChef = _context.Dishes.Include(d => d.Maker).ToList();
+        List<Dish> DishWithChef =_context.Dishes.Include(d => d.Maker).ToList();
+        return View(DishWithChef);
     }
+    //____________________________
     public IActionResult Privacy()
     {
         return View();

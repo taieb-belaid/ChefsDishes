@@ -21,14 +21,14 @@
 
             <div class="middle">
                 <label class="form-label">Chef's Name</label>
-                @* <select asp-for="ChefId " class="form-select">
+                <select asp-for="ChefId " class="form-select">
                     <option value="null">--select a chef--</option>
                     @foreach (Chef chef in @ViewBag.All_Chefs)
                     {
                         <option value="@chef.ChefId">@chef.FirstName @chef.LastName</option>
                     }
                 </select>
-                <span asp-validation-for="ChefId"></span> *@
+                <span asp-validation-for="ChefId"></span>
             </div>
 
             <div class="right">
