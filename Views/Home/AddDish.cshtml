@@ -23,7 +23,7 @@
                 <label class="form-label">Chef's Name</label>
                 <select asp-for="ChefId " class="form-select">
                     <option value="null">--select a chef--</option>
-                    @foreach (Chef chef in @ViewBag.All_Chefs)
+                    @foreach (var chef in ViewBag.All_Chefs)
                     {
                         <option value="@chef.ChefId">@chef.FirstName @chef.LastName</option>
                     }

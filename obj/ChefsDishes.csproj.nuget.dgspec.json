@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\belai\\OneDrive\\Bureau\\c#\\ORMs\\ChefsDishes\\ChefsDishes.csproj": {}
+    "c:\\Users\\belai\\OneDrive\\Bureau\\c#\\ORMs\\ChefsDishes\\ChefsDishes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\belai\\OneDrive\\Bureau\\c#\\ORMs\\ChefsDishes\\ChefsDishes.csproj": {
+    "c:\\Users\\belai\\OneDrive\\Bureau\\c#\\ORMs\\ChefsDishes\\ChefsDishes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\belai\\OneDrive\\Bureau\\c#\\ORMs\\ChefsDishes\\ChefsDishes.csproj",
+        "projectUniqueName": "c:\\Users\\belai\\OneDrive\\Bureau\\c#\\ORMs\\ChefsDishes\\ChefsDishes.csproj",
         "projectName": "ChefsDishes",
-        "projectPath": "C:\\Users\\belai\\OneDrive\\Bureau\\c#\\ORMs\\ChefsDishes\\ChefsDishes.csproj",
+        "projectPath": "c:\\Users\\belai\\OneDrive\\Bureau\\c#\\ORMs\\ChefsDishes\\ChefsDishes.csproj",
         "packagesPath": "C:\\Users\\belai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\belai\\OneDrive\\Bureau\\c#\\ORMs\\ChefsDishes\\obj\\",
+        "outputPath": "c:\\Users\\belai\\OneDrive\\Bureau\\c#\\ORMs\\ChefsDishes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\belai\\AppData\\Roaming\\NuGet\\NuGet.Config"
